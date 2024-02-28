@@ -166,6 +166,7 @@ ro.netflix.bsp_rev=Q8450-34634-1
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
+persist.radio.multisim.config=dsds
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.procedure_bytes=SKIP
