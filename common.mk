@@ -322,6 +322,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/oplus \
+    hardware/qcom-caf/sm8450/audio/agm/ipc/HwBinders/legacy \
     kernel/oneplus/sm8450 \
     kernel/oneplus/sm8450-modules
 

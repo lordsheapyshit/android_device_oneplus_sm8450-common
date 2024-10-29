@@ -26,6 +26,7 @@ function vendor_imports() {
     cat <<EOF >>"$1"
 		"device/oneplus/sm8450-common",
 		"hardware/qcom-caf/sm8450",
+		"hardware/qcom-caf/sm8450/audio/agm/ipc/HwBinders/legacy",
 		"hardware/qcom-caf/wlan",
 		"hardware/oplus",
 		"vendor/qcom/opensource/commonsys/display",
