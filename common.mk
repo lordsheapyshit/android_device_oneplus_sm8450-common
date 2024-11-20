@@ -297,6 +297,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.oplus-multihal \
+    libsensorndkbridge:64 \
     sensors.dynamic_sensor_hal \
     sensors.oplus
 
