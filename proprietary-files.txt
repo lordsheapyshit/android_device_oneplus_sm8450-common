@@ -390,7 +390,7 @@ vendor/lib64/vendor.libdpmframework.so
 vendor/lib64/vendor.libdpmtcm.so
 vendor/lib64/vendor.libmwqemiptablemgr.so
 vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
+vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so;MODULE_SUFFIX=_vendor
 
 # DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
@@ -967,7 +967,6 @@ vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqcrildataqos.so
 vendor/lib64/libqdpr.so
 vendor/lib64/libqrtr.so
-vendor/lib64/libqrtrclient.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril-db.so
 vendor/lib64/libril-legacy.so
@@ -1239,7 +1238,6 @@ vendor/etc/seccomp_policy/wifidisplayhalservice.policy
 vendor/etc/wfdconfig.xml
 vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so
 vendor/lib64/libFileMux_proprietary.so
-vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmrtpdecoder_vendor.so
 vendor/lib64/libmmrtpencoder_vendor.so
 vendor/lib64/libwfdcodecv4l2_proprietary.so
