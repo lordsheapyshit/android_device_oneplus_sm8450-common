@@ -57,27 +57,10 @@ lib_fixups.update({
 })  # fmt: skip
 
 blob_fixups: blob_fixups_user_type = {
-    'odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service': blob_fixup()
-        .replace_needed('android.frameworks.stats-V1-ndk_platform.so', 'android.frameworks.stats-V2-ndk.so'),
-    (
-        "odm/lib64/libaps_frame_registration.so",
-        "odm/lib64/libCOppLceTonemapAPI.so",
-        "odm/lib64/libCS.so",
-        "odm/lib64/libSuperRaw.so",
-        "odm/lib64/libYTCommon.so",
-        "odm/lib64/libyuv2.so",
-    ): blob_fixup()
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'odm/lib64/libAlgoProcess.so': blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V2-ndk_platform.so', 'android.hardware.graphics.common-V5-ndk.so'),
-    'odm/lib64/libextensionlayer.so': blob_fixup()
-        .replace_needed('libziparchive.so', 'libziparchive_odm.so'),
     'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V5-ndk_platform.so', 'vendor.qti.hardware.display.config-V5-ndk.so'),
     'vendor/bin/qcc-trd': blob_fixup()
         .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
-    'vendor/lib64/libcamximageformatutils.so': blob_fixup()
-        .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
     'vendor/lib64/libgrpc++_unsecure_prebuilt.so': blob_fixup()
         .fix_soname(),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
@@ -99,8 +82,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V3-cpp.so'),
     
     # regex
-    'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
-        .regex_replace('SystemCamera =  0;  0;  1;  1;  1;  1', 'SystemCamera =  0;  0;  0;  0;  0;  1'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
     (
