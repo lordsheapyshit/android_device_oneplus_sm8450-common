@@ -435,7 +435,8 @@ PRODUCT_BOOT_JARS += \
 # Shims
 PRODUCT_PACKAGES += \
     libgui_shim:64 \
-    libhidlbase_shim:64
+    libhidlbase_shim:64 \
+    libinput_shim:64
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8450-common/sm8450-common-vendor.mk)
