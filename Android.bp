@@ -4,8 +4,6 @@
 //
 
 soong_namespace {
-    imports: [
-    ],
 }
 
 install_symlink {
