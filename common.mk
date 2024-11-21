@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService-Soong
 
+# FIXME libhfp_pal:64
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl:64 \
@@ -48,7 +49,6 @@ PRODUCT_PACKAGES += \
     libagm_pcm_plugin:64 \
     libbatterylistener:64 \
     libfmpal:64 \
-    libhfp_pal:64 \
     libhapticgenerator:64 \
     libqcompostprocbundle:64 \
     libqcomvisualizer:64 \
