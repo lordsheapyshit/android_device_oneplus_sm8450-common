@@ -434,6 +434,7 @@ PRODUCT_BOOT_JARS += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libgui_shim:64 \
     libhidlbase_shim:64
 
 # Inherit from the proprietary files makefile.
