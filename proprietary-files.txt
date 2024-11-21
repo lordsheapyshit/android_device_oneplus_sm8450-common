@@ -5,6 +5,8 @@
 # libar-pal depends on libagmclient, which is a gnu makefile target
 # libcne, lowi-server depend on libwpa_client, which is a gnu makefile target
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
+# audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
+
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
@@ -158,6 +160,7 @@ vendor/lib64/libeai_float.so
 vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
+vendor/lib64/hw/audio.primary.taro.so:odm/lib64/hw/audio.primary.taro.so;DISABLE_CHECKELF;MODULE_SUFFIX=_odm;DISABLE_DEPS
 
 # Bluetooth
 odm/lib64/libbluetooth_audio_extend_factory_client.so
