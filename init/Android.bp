@@ -11,8 +11,8 @@ cc_library_static {
 }
 
 prebuilt_etc {
-    name: "fstab.qcom",
-    src: "fstab.qcom",
+    name: "fstab.default",
+    src: "fstab.default",
     vendor: true,
 }
 

@@ -80,7 +80,7 @@ on early-fs
 
 on fs
     start hwservicemanager
-    mount_all /vendor/etc/fstab.qcom --early
+    mount_all /vendor/etc/fstab.default --early
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
@@ -92,8 +92,8 @@ on post-fs
     setrlimit 8 67108864 67108864
 
 on late-fs
-    mount_all --late
-    mount_all /vendor/etc/fstab.qcom --late
+    wait_for_prop hwservicemanager.ready true
+    mount_all /vendor/etc/fstab.default --late
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
