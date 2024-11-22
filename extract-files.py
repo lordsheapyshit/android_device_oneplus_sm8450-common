@@ -132,6 +132,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/seccomp_policy/qwesd@2.0.policy': blob_fixup()
         .add_line_if_missing('gettid: 1')
         .add_line_if_missing('pipe2: 1'),
+    'vendor/etc/seccomp_policy/wfdhdcphalservice.policy': blob_fixup()
+        .add_line_if_missing('gettid: 1'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
